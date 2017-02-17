@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "bourbon/bourbon";
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+@import "modules/navigator";
+body{
+  background-color: white;
+}
+.full-width{
+  width: 100%;
+}
+@import "modules/projectModal";
+.hero-image{
+  height: 100vh;
+  background-image: url(../images/demon.jpg);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //box-shadow: inset 0px 0 9px -7px rgba(0,0,0,0.4);
+  .overlay{
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    box-shadow: inset 0 -30px 20px -7px rgba(0,0,0,0.4);
+    background-image: url(../images/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    #resume-link{
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 7px;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      @include transition(all 300ms);
+      &:hover{
+        background-color: red;
+        color: white;
+        border: transparent;
+
+      }
+    }
+    #github-link{
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 7px;
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      @include transition(all 300ms);
+      &:hover{
+        background-color: red;
+        color: white;
+        border: transparent;
+
+      }
+    }
+  }
+}
+@import "modules/profile";
+@import "modules/projects";

@@ -1,0 +1,35 @@
+---
+---
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio-Devender Singh Shekhawat</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+     {% include projectModal.html %}
+     {% include navigator.html %}
+     {% include hero.html %}
+     {% include profile.html %}
+     {% include projects.html %}
+
+     <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyC6SwzjxfKjvv5T3z-f5U_0EndE5fOC-w4",
+          authDomain: "portfolio-77dcd.firebaseapp.com",
+          databaseURL: "https://portfolio-77dcd.firebaseio.com",
+          storageBucket: "portfolio-77dcd.appspot.com",
+          messagingSenderId: "117545350680"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+     <script src="assets/js/ui.js"></script>
+  </body>
+</html>
